@@ -1,0 +1,247 @@
+.board {
+    border: solid;
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    background-color: black;
+}
+
+.square {
+    border: solid;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.empty {
+    display: block;
+    margin: auto;
+    border: none;
+    background-color: transparent;
+    width: 80px;
+    height: 80px;
+}
+
+.horizontal {
+    background-color: white;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+}
+
+.container {
+    width: 640px;
+    height: 728px;
+    margin: auto;
+}
+
+.example {
+    width: 20px;
+    height: 718px;
+    float: left;
+}
+
+.entire {
+    width: 700px;
+    height: 780px;
+    margin: auto;
+}
+
+.nums {
+    font-size: 30px;
+    height: 720px;
+}
+
+.example2 {
+    width: 640px;
+    height: 30px;
+    margin: auto;
+}
+
+.horizontal {
+    width: 640px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.entire2 {
+    width: 1750px;
+    height: 800px;
+    margin: auto;
+}
+
+.move {
+    width: 400px;
+    height: 500px;
+    float: left;
+    border: solid;
+    margin-top: 200px;
+    margin-left: 70px;
+}
+
+.removed {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+    float: right;
+    border: solid;
+    margin-top: 200px;
+    margin-right: 70px;
+    word-wrap: break-word;
+}
+
+.make-move {
+    text-align: center;
+}
+
+.removed-pieces {
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.inputs {
+    margin: auto;
+    width: 300px;
+    height: 80px;
+    margin-top: 20px;
+    border: solid;
+}
+
+.input {
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.entered {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 7px;
+    margin-bottom: 0px;
+}
+
+.keys {
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+button {
+    width: 33px;
+}
+
+.ok {
+    width: 50px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.clear {
+    width: 50px;
+    margin-top: 5px;
+}
+
+.temp {
+    margin: auto;
+    width: 110px;
+}
+
+.where {
+    text-align: center;
+}
+
+.entered2 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 7px;
+    margin-bottom: 0px;
+}
+
+.ok2 {
+    width: 50px;
+    margin-top: 5px;
+}
+
+.clear2 {
+    width: 50px;
+    margin-top: 5px;
+}
+
+.return {
+    width: 60px;
+    text-align: center;
+}
+
+.temp2 {
+    margin: auto;
+    width: 180px;
+}
+
+.where-to {
+    margin-bottom: 0px;
+}
+
+.is-invalid {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    gap: 5px;
+}
+
+.dead-pieces {
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+    word-wrap: break-word;
+}
+
+.announcements {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 25px;
+    color: rgb(143, 48, 48);
+}
+
+.end {
+    display: flex;
+    width: 55%;
+    position: absolute;
+}
+
+.restart {
+    display: block;
+    width: 300px;
+    height: 100px;
+    font-size: 30px;
+    margin-left: 120px;
+}
+
+.when-promoting {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.promote-option {
+    display: block;
+    width: 70px;
+    height: 50px;
+    font-size: 17.5px;
+}
+
+.check {
+    color: red;
+    text-align: center;
+    width: 70%;
+}
+
+.check-holder {
+    position: absolute;
+    left: 1400px;
+}

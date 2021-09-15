@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Chess </title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+    </head>
+    <body>
+        <div class = "entire2">
+            <div class = "check-holder">
+                <h1 class = "check" id = >  </h1>
+            </div>
+            <div class = "end">
+                <div>
+                    <button class = "restart"> Restart Game </button>
+                </div>
+            </div>
+            <div class = "move"> 
+                <h2 class = "make-move"> Make Your Move </h2>
+                <div class = "when-promoting">
+                    <h3 class = "promotion-header"> Promote Pawn To? </h3>
+                    <button class = "promote-option"> Queen </button>
+                    <button class = "promote-option"> Knight </button>
+                    <button class = "promote-option"> Bishop </button>
+                    <button class = "promote-option"> Rook </button>
+                </div> 
+                
+                <h4 class = "input"> Enter Input </h4>
+                <div class = "inputs">
+                    <p class = "entered"></p>
+                    <div class = "temp">
+                        <button class = "ok"> OK </button>
+                        <button class = "clear"> Clear </button>
+                    </div>
+                </div>
+                <div class = "keys"> 
+                    <button class = "key"> a </button>
+                    <button class = "key"> b </button>
+                    <button class = "key"> c </button>
+                    <button class = "key"> d </button>
+                    <button class = "key"> e </button>
+                    <button class = "key"> f </button>
+                    <button class = "key"> g </button>
+                    <button class = "key"> h </button>
+                    <br>
+                    <button class = "key"> 1 </button>
+                    <button class = "key"> 2 </button>
+                    <button class = "key"> 3 </button>
+                    <button class = "key"> 4 </button>
+                    <button class = "key"> 5 </button>
+                    <button class = "key"> 6 </button>
+                    <button class = "key"> 7</button>
+                    <button class = "key"> 8 </button>
+                </div>
+                <div class = "where-to"> 
+                    <h4 class = "where"> Where To? </h4>
+                    <div class = "inputs">
+                        <p class = "entered2"></p>
+                        <div class = "temp2">
+                            <button class = "clear2"> Clear </button>
+                            <button class = "ok2"> OK </button>
+                            <button class = "return"> Return </button>
+                        </div>
+                    </div>
+                </div>
+                <p class = "is-invalid"></p>
+            </div>
+            <div class = "removed">
+                <h2 class = "removed-pieces"> Removed Pieces </h2>
+                <p class = "dead-pieces"> </p>
+            </div>
+            <div class = "entire">
+                <div class = "example">
+                    <table class = "nums">
+                        <tr>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                </div> 
+                <div class = "container">
+                    <table class = "board">
+                        <tr>
+                            <td class = "square">&#9820</td>
+                            <td class = "square">&#9822</td>
+                            <td class = "square">&#9821</td>
+                            <td class = "square">&#9819</td>
+                            <td class = "square">&#9818</td>
+                            <td class = "square">&#9821</td>
+                            <td class = "square">&#9822</td>
+                            <td class = "square">&#9820</td>
+                        </tr>
+                        <tr>
+                            <td class = "square">&#9823</td>
+                            <td class = "square">&#9823</td>
+                            <td class = "square">&#9823</td>
+                            <td class = "square">&#9823</td>
+                            <td class = "square">&#9823</td>
+                            <td class = "square">&#9823</td>
+                            <td class = "square">&#9823</td>
+                            <td class = "square">&#9823</td>
+                        </tr>
+                        <tr>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                        </tr>
+                        <tr>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                        </tr>
+                        <tr>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                        </tr>
+                        <tr>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                            <td class = "square"></td>
+                        </tr>
+                        <tr>
+                            <td class = "square">&#9817</td>
+                            <td class = "square">&#9817</td>
+                            <td class = "square">&#9817</td>
+                            <td class = "square">&#9817</td>
+                            <td class = "square">&#9817</td>
+                            <td class = "square">&#9817</td>
+                            <td class = "square">&#9817</td>
+                            <td class = "square">&#9817</td>
+                        </tr>
+                        <tr>
+                            <td class = "square">&#9814</td>
+                            <td class = "square">&#9816</td>
+                            <td class = "square">&#9815</td>
+                            <td class = "square">&#9813</td>
+                            <td class = "square">&#9812</td>
+                            <td class = "square">&#9815</td>
+                            <td class = "square">&#9816</td>
+                            <td class = "square">&#9814</td>
+                        </tr>
+                    </table>
+                    <div class = "example2"> 
+                        <table class = "horizontal">
+                            <tr>
+                                <td>a</td>
+                                <td>b</td>
+                                <td>c</td>
+                                <td>d</td>
+                                <td>e</td>
+                                <td>f</td>
+                                <td>g</td>
+                                <td>h</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src = "script.js"></script>
+</html>
