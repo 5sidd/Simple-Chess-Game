@@ -711,6 +711,7 @@ function promotionTransformation(num) {
     clear3();
 }
 
+/*
 function kingChecker() {
     let defaultWhiteTurn = whiteTurn;
     let defualtBlackTurn = blackTurn;
@@ -746,6 +747,7 @@ function kingChecker() {
         return false;
     }
 }
+*/
 
 //see if there is a checkmate
 function checkMate() {
@@ -762,10 +764,12 @@ function checkMate() {
     return false;
 }
 
+// ends the game
 function endGame() {
     document.querySelector('.move').style.display = 'none';
 }
 
+//function to reset everything
 function restartGame() {
     revert();
     clear3();
