@@ -9,6 +9,7 @@ function revert() {
     for (let i = 0; i < squares.length; i++) {
         if (isBrown) {
             squares[i].style.backgroundColor = "#996240";
+
         }
         else {
             squares[i].style.backgroundColor = "white";
@@ -99,6 +100,8 @@ for (let i = 0; i < inputs.length; i++) {
     });
 }
 
+whoseTurn();
+
 ok1.addEventListener('click', () => {
     if (selectPiece.textContent === "") {
         isInvalid.textContent = "Invalid Input, Try Again";
@@ -142,6 +145,7 @@ ok2.addEventListener('click', () => {
             //kingChecker();
         }
     }
+    whoseTurn();
 });
 
 //clears everything so that user can rewrite their inputs
@@ -673,6 +677,7 @@ for (let i = 0; i < promotionOptions.length; i++) {
         givenInputs.style.display = "block";
         whereTo.style.display = "block";
         promotionTransformation(i);
+        whoseTurn();
     })
 }
 
@@ -794,9 +799,21 @@ function restartGame() {
         squares[i].textContent = whitePieces[c];
         c = c + 1;
     }
+    whoseTurn();
     document.querySelector('.move').style.display = 'block';
 }
 
 restart.addEventListener('click', () => {
     restartGame();
 })
+
+function whoseTurn() {
+    if (!checkMate()) {
+        if (whiteTurn) {
+            check.textContent = 'White Turn';
+        }
+        if (blackTurn) {
+            check.textContent = 'Black Turn';
+        }
+    }
+}
