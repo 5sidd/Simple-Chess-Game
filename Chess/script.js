@@ -775,6 +775,10 @@ function restartGame() {
     clear3();
     check.textContent = '';
     removedPieces.textContent = '';
+    whiteTurn = true;
+    blackTurn = false;
+    input1 = true;
+    input2 = false;
     squares.forEach(s => s.textContent = '');
     for (let i = 0; i < 8; i++) {
         squares[i].textContent = blackPieces[i];
