@@ -243,9 +243,10 @@ button {
     color: red;
     text-align: center;
     width: 70%;
+
+    margin: auto;
 }
 
 .check-holder {
-    position: absolute;
-    left: 1400px;
+    margin-bottom: 30px;
 }
